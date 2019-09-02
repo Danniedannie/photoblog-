@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: postgres
+  password: password
+  host: localhost
+
+development:
+  <<: *default
+  database: photoflash_development
+
+test:
+  <<: *default
+  database: photoflash_test
+
+production:
+  <<: *default
+  database: photoflash_production
+  # username: nomster
+  # password: <%= ENV['PHOTOFLASH_DATABASE_PASSWORD'] %>
