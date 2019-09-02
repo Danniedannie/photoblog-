@@ -65,4 +65,3 @@ gem 'mini_magick'
 gem 'fog-aws'
 gem 'figaro'
 gem 'unf'
-
