@@ -14,11 +14,13 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
+    before_action :authenticate_user!
     @post = Post.new
   end
 
   # GET /posts/1/edit
   def edit
+    before_action :authenticate_user!
   end
 
   # POST /posts
