@@ -14,7 +14,6 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
-    before_action :authenticate_user!
     @post = Post.new
   end
 

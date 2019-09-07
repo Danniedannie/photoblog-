@@ -1,10 +1,10 @@
+@import "bootstrap";
+@import "font-awesome";
 /* common styles */ 
 body {
     margin: 0;
   
 }
-
-@import "bootstrap";
 /*  Common nav styles */
 .navigation-wrapper {
     height: 190px;
@@ -21,8 +21,9 @@ body {
 }
 
 /* styles specific to the logo */
-.nav-brand {
-    text-decoration: none;
-    border: 0 !important;
+.nav-brand:hover {   
+    opacity:1.0;
+
+    box-shadow:none;
     
 }
