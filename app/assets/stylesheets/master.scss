@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome-sprockets";
 @import "font-awesome";
 /* common styles */ 
 body {
@@ -18,6 +19,10 @@ body {
     justify-content: space-between;
     align-items: center;
 
+}
+
+.nav-item-3 i {
+    margin-right: 15px; 
 }
 
 /* styles specific to the logo */
