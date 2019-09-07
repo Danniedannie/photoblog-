@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Photoflash</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+  <title>Photodump</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
+  <div class="navigation-wrapper">
+
+     
+      <div class ="placeholder-space-left">
+      </div>
+
+
+  <div class="nav-item-1">
+      <%= link_to 'About us', about_path %>
+      </div>
+
+<div class ="nav-brand">
+<%= link_to image_tag('logo_transparent.png', :width =>300, :height => 300), root_path %>
+</div>
+
+<div class="nav-item-3">
+<%= link_to 'Contact', contact_path %>
+</div>
+<div class="placeholder-space-right">
+</div>
+</div>
     <%= yield %>
   </body>
   <% if notice.present? %>

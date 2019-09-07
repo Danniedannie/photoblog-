@@ -1,0 +1,28 @@
+/* common styles */ 
+body {
+    margin: 0;
+  
+}
+
+@import "bootstrap";
+/*  Common nav styles */
+.navigation-wrapper {
+    height: 190px;
+    background-color: #11122b;
+    color: white;
+    margin-left: -33px; 
+    margin-top: -33px; 
+    margin-right: -33px; 
+    /* flex box container */
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* styles specific to the logo */
+.nav-brand {
+    text-decoration: none;
+    border: 0 !important;
+    
+}
