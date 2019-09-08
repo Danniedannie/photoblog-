@@ -1,6 +1,3 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
 <body>
 </br>
@@ -50,53 +47,20 @@
 
     <br />
 
-<div class="container">
-<div class="row">
-
-  <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-    <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid rounded">
-  </a>
-  <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-    <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid rounded">
-  </a>
-  <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-    <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid rounded">
-  </a>
-</div>
-<br />
-<div class="row">
-  <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-    <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid rounded">
-  </a>
-  <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-    <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid rounded">
-  </a>
-  <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
-    <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid rounded">
-  </a>
-</div>
-</div>
-
-<br />
-
-<h1> Recently added posts </h1>
+    <h1 class="title">Recent Posts</h1>
+   <br />
+    <div class="container">
     <% @posts.each do |post| %>
-      <div class="added-posts"
-       <a href="<%= post_url(post) %>"><%= image_tag(post.image.profile_size.url) %></a>
-       </div>
-       <div class="post-title">
-       <h2> <%= link_to post.title, post %> </h2>
-       </div>
-       <div class="post-description">
-       <%= post.description %>
-       </div>
-       <br />
-        <%= link_to 'Edit', edit_post_path(post) %>
-        
-      <hr>
-    <% end %>
+      <img src="<%= post_url(post) %>"><%= image_tag(post.image.url)%>
+      <% end %>
+      <img src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="2">
+      <img src="https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="3">
+      <img src="https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="4">
+      <img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="5">
+      <img src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="6">
+    </div>
+    
 
-<br>
 
 <%= link_to 'New Post', new_post_path %>
 </body>
