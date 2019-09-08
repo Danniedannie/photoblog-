@@ -30,6 +30,7 @@ body {
     font-family: 'Ubuntu Condensed', sans-serif;
     color: #cbcbcb;
     padding-bottom: 100px;
+     
 }
 .nav-item-3 {
     width: 100px; 
@@ -37,6 +38,7 @@ body {
     font-family: 'Ubuntu Condensed', sans-serif;
     color: #cbcbcb;
     padding-bottom: 100px;
+   
 }
 
 a.about-link {
@@ -44,29 +46,42 @@ a.about-link {
 }
 
 a.contact-link {
-    color: #cbcbcb
+    color: #d9d9d9
 }
 
 .about-link:hover {
     border-bottom: transparent;
-    letter-spacing: 2px; 
+    letter-spacing: 1px; 
     text-decoration: none; 
-    color: #cea135; 
+    color: #d9d9d9; 
     background: transparent;
+    transition: 1s; 
 }
 
 .contact-link:hover {
     border-bottom: transparent;
     letter-spacing: 2px; 
     text-decoration: none; 
-    color: #cea135; 
+    color: #d9d9d9; 
     background: transparent; 
+    transition: 1s; 
 }
 
 .nav-image:hover  {
     background: transparent; 
     
 }
+
+.container {
+
+}
+
+
+.container a:hover {
+    background: lightgrey;
+    transition: 2s; 
+}
+
 
 
 

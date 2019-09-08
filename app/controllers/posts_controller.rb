@@ -19,7 +19,6 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
-    before_action :authenticate_user!
   end
 
   # POST /posts
