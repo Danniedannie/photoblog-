@@ -51,7 +51,10 @@
    <br />
     <div class="container">
     <% @posts.each do |post| %>
-      <img src="<%= post_url(post) %>"><%= image_tag(post.image.url)%>
+     <%= image_tag post.image.url %>
+      <div class="box">
+        <%= link_to post.description, post, class:'text'%>
+      </div>
       <% end %>
       <img src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="2">
       <img src="https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="3">
@@ -62,5 +65,8 @@
     
 
 
-<%= link_to 'New Post', new_post_path %>
 </body>
+
+<br />
+<br />
+

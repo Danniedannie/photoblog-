@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0; 
 }
 
 .h1, h2, h3, h4 {
@@ -22,6 +23,7 @@ body {
     display: flex; 
     justify-content: space-between;
     align-items: center;
+    font-size: 2em; 
 }
 
 .nav-item-1{
@@ -72,14 +74,63 @@ a.contact-link {
     
 }
 
-.container {
+/* common footer styles */
 
+.footer-wrapper {
+    padding-top: 10px; 
+    height: 200px; 
+    background-color: #11122b;
+    color: #cbcbcb;
+    font-family: "Unbuntu Condensed", sans-serif; 
+    margin-left: -33px; 
+    margin-right: -33px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+ 
 }
 
+.footer-wrapper > .footer-item-1 {
+    width: 45px; 
+    font-size: 12px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #cbcbcb;
+    text-decoration: none; 
+}
 
-.container a:hover {
-    background: lightgrey;
-    transition: 2s; 
+.footer-wrapper > .footer-item-2{
+    width: 45px; 
+    font-size: 12px;
+    align-items: center;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #cbcbcb;
+}
+.footer-wrapper > .footer-item-3{
+    width: 45px; 
+    font-size: 12px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #cbcbcb;
+}
+
+.footer-wrapper > .footer-item-4{
+    width: 45px; 
+    font-size: 12px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    color: #cbcbcb;
+}
+
+.footer-item-4:hover {
+    border-bottom: transparent;
+    letter-spacing: 2px; 
+    text-decoration: none; 
+    color: #d9d9d9; 
+    background: transparent; 
+    transition: 1s; 
+}
+
+.footer-wrapper > .copyright-wrapper {
+    font-size: 0.75em;
 }
 
 
