@@ -4,10 +4,10 @@
 
 <div class="hero-section">
   <div class="top-heading">
-      <h1> Shit posting </h1>
+      <h1> Shabby chic butcher tbh</h1>
       </div>
     <div class="bottom-heading">
-    <h5> Done your way </h5>
+    <h5>flexitarian cred</h5>
   </div>
 </div>
 
@@ -51,16 +51,11 @@
    <br />
     <div class="container">
     <% @posts.each do |post| %>
-     <%= image_tag post.image.url %>
+     <%= image_tag (post.image.profile_size.url) %>
       <div class="box">
-        <%= link_to post.description, post, class:'text'%>
       </div>
       <% end %>
-      <img src="https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="2">
-      <img src="https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="3">
-      <img src="https://images.pexels.com/photos/807598/pexels-photo-807598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="4">
-      <img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="5">
-      <img src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="6">
+    
     </div>
     
 
