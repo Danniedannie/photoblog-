@@ -14,81 +14,10 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
 
-  <div class="navigation-wrapper">
-
-     
-      <div class ="placeholder-space-left">
-      </div>
-
-     <div class="nav-item-1">
-     <i class="far fa-heart"></i>
-        <%= link_to 'About', about_path, class: 'about-link' %>
-      </div>
-
-<div class ="nav-brand">
-<%= link_to image_tag('logo_transparent.png', :width =>250, :height => 250), root_path, class: 'nav-image' %>
-</div>
-
-<div class="nav-item-3">
-<i class="fas fa-phone"></i>
-<%= link_to 'Contact', contact_path, class: 'contact-link' %>
-</div>
-<div class="placeholder-space-right">
-</div>
-</div>
+  
 <%= yield %>
   </body>
 
 
- <div class="footer-wrapper">
-
-    <div class ="footer-brand">
-      <%= link_to image_tag('logo_transparent.png', :width =>250, :height => 250), root_path, class: 'nav-image' %>
-    </div>
-
-      <div class="footer-item-1">
-        <%= link_to 'Home', root_path, class:'footer-root'%>
-      </div>
-  
-      <div class="footer-item-2">
-        <%= link_to 'New post', new_post_path, class:'footer-new-post' %>
-      </div>
-  
-    <div class="footer-item-3">
-      <%= link_to 'Contact', contact_path, class:'footer-contact' %>
-    </div> 
-
-    <div class="footer-item-4">
-      <%= link_to 'About', about_path, class:'footer-about' %>
-    </div>  
-
-
-    <br />
-
-    <div class="social-media-icons-wrapper">
-
-      <a href='#'
-        <i class="fab fa-twitter"></i>
-      </a>
-
-  
-      <a href='#'
-        <i class="fab fa-facebook-f"></i>
-      </a>
-
-      <a href='#'
-      <i class="fab fa-instagram"></i>
-      </a>
-
-      </div>
-
-      <br />
-      
-
-    <div class="copyright-wrapper">
-        &copy; PhotoDump &#124; All rights reserved
-    </div>    
-    </div>
-
-
+ 
 </html>
