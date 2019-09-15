@@ -1,6 +1,7 @@
 /* skewed header */ 
 
 .skewed-header {
+    color: white; 
     position: relative;
     height: 400px; 
     overflow: hidden; 
@@ -11,7 +12,6 @@
 }
 
 .skewed-header > .header-bg {
-
     position: absolute; 
     top: 0; 
     bottom: 0;
@@ -75,7 +75,15 @@
 .page-container > .content-wrapper p {
     letter-spacing: 1px; 
     line-height: 30px; 
-    font-size: 18px;
-    padding-bottom: 40px;  
+    font-size: 15px; 
+    margin-left: 22px 
 }
+
+
+
+
+
+
+
+
 
