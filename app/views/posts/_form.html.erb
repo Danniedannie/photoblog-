@@ -1,3 +1,4 @@
+
 <%= form_with(model: post, local: true) do |form| %>
   <% if post.errors.any? %>
     <div id="error_explanation">
@@ -11,22 +12,27 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
 
-  <div class="field">
-    <%= form.label :image %>
+  <div class="booyah-box col-10 offset-1">
+  <h1> Add a new post </h1>
+    <%= simple_form_for @post do |f| %>
+    <%= f.input :title %>
     <%= form.file_field :image %>
-  </div>
+    <%= f.input :description %>
+        <br />
+      <%= f.submit 'Create Post', class: 'btn btn-primary' %>
+  <% end %>
+</div>
 
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
-  </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+
+
+
+
+
+
 <% end %>
+
+
+
+

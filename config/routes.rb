@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 root to: "posts#index"
 get 'about', to: 'posts#about'
 get 'contact', to: 'posts#contact'
+resources :messages
 end

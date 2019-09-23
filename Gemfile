@@ -76,3 +76,5 @@ source 'https://rails-assets.org' do
 end
 
 gem 'font-awesome-sass', '~> 5.9.0'
+
+gem 'simple_form'
