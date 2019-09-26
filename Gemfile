@@ -78,3 +78,7 @@ end
 gem 'font-awesome-sass', '~> 5.9.0'
 
 gem 'simple_form'
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.5'
+end

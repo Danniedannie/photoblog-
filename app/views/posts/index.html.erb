@@ -1,6 +1,9 @@
 
 <body>
 
+<script> https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js </script> 
+<script> https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js </script>
+<script> https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js </script>
 <div class="navigation-wrapper">
       <div class="links-wrapper">
         <div class ="placeholder-space-left">
@@ -16,8 +19,8 @@
         </div>
 
         <div class="nav-item-3">
-          <i class="fas fa-phone"></i>
-          <%= link_to 'Contact', contact_path, class: 'contact-link' %>
+          <i class="fas fa-camera-retro"></i>
+          <%= link_to 'New Post', new_post_path, class: 'contact-link' %>
         </div>
           <div class="placeholder-space-right">
        </div>
@@ -37,7 +40,7 @@
 <div class="features-section">
   <div class="columns-wrapper">
     <div class="column">
-      <i class="fas fa-camera-retro"></i>
+      <i class="fas fa-camera"></i>
       <p>Great photos!</p>
 
       <p>
@@ -71,19 +74,57 @@
     <br />
 
     <h1 class="title">Recent Posts</h1>
-   <br />
-    <div class="container">
-    <% @posts.each do |post| %>
-     <%= image_tag (post.image.profile_size.url) %>
-      <div class="box">
+    <br />
+    <!-- Trigger the Modal -->
+     <div class="container">
+            <% @posts.each do |post| %>
+            <%= image_tag (post.image.profile_size.url), id:"myImg" %>
+       <div class="box">
       </div>
-      <% end %>
-    
-    </div>
+    <% end %>
+  </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <% @posts.each do |post| %>
+    <%= image_tag (post.image.url), id:"img01", class:"modal-content" %>
+ <% end %>
 
 
- 
-    
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+
+
+
+<script> 
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+for (img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;) {
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+</script> 
 
     <div class="footer-wrapper">
 

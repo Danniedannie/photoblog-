@@ -19,24 +19,3 @@ RSpec.describe Post, type: :model do
     end
   end 
 end 
-=begin 
-    it "should not let a user be created without a password" do
-      @user.password = nil
-      expect(@user).to_not be_valid
-    end
-  end
-
-  describe "length validations" do
-    it "should not allow a name longer than 50 characters" do
-      @user.name = "j" * 51
-      expect(@user).to_not be_valid
-    end
-  end
-end
- =end
-# create_table "posts", force: :cascade do |t|
-#   t.string "title"
-#   t.string "image"
-#   t.text "description"
-#   t.datetime "created_at", null: false
-#   t.datetime "updated_at", null: false
